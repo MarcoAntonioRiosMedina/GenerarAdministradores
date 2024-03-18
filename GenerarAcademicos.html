@@ -179,9 +179,9 @@
       var select = document.getElementById("usuario");
       var opcion = select.options[select.selectedIndex].value;
       var salida = ` CREATE DATABASE IF NOT EXISTS sistema_escolar;<br> USE sistema_escolar;<br> CREATE TABLE IF NOT EXISTS ${opcion} (<br>  expediente INT(11) UNSIGNED NOT NULL UNIQUE,<br>  apellido1 VARCHAR(255) NOT NULL,<br>  apellido2 VARCHAR(255),<br>  nombre VARCHAR(255) NOT NULL,<br>  correo_ins VARCHAR(255) NOT NULL UNIQUE<br>, contrasenia VARCHAR(100), fecha_nac DATE);<br> INSERT INTO ${opcion} (expediente, apellido1, apellido2, nombre, correo_ins, contrasenia, fecha_nac) VALUES <br>`;
-      var matriculaAlumno = 222200017;
-      var matriculaAcademico = 777700020;
-      var matriculaAdmin = 999900020;
+      var matriculaAlumno = 222217559;
+      var matriculaAcademico = 777717559;
+      var matriculaAdmin = 999917559;
 
       switch (opcion) {
       case "alumnos":
